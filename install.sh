@@ -8,7 +8,7 @@ apt-get update
 
 # Install sbt
 echo "================= Install sbt ==================="
-wget -nv https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.13/sbt-launch.jar
+wget -nv https://repo1.maven.org/maven2/org/scala-sbt/sbt-launch/1.2.8/sbt-launch.jar
 mv sbt-launch.jar /usr/local/bin/sbt-launch.jar
 echo 'SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled"' > /usr/local/bin/sbt
 echo 'java $SBT_OPTS -jar `dirname $0`/sbt-launch.jar "$@"' >> /usr/local/bin/sbt
